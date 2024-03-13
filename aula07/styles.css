@@ -1,0 +1,28 @@
+.borda-largura {
+    border: 20px solid red;
+}
+
+.borda{
+    border-top: 20px dotted yellow;
+    border-right: 10px dashed blueviolet;
+    border-bottom: 5px groove black;
+    border-left: 15px double green;
+}
+
+.borda2 {
+    border: 20px outset yellow;
+
+    border-top-color: red;
+    border-right-color: blue;
+}
+
+.borda3 {
+    border: solid;
+    border-color: red black yellow green;
+} 
+
+.borda4 {
+    border: 10px brown;
+    border-style: dotted double ridge;
+    border-radius: 50px;
+} 
