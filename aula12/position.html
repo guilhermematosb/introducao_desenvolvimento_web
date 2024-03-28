@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+
+    <style>
+        .static-example {
+            position: static;
+        }
+
+        .relative-example {
+            position: relative;
+            top: 20px;
+            /* Move 20 pixels para baixo da posição normal */
+            left: 10px;
+            /* Move 10 pixels para a direita da posição normal */
+        }
+
+        .absolute-parent {
+            position: relative;
+            /* Necessário para garantir que a posição absoluta seja em relação a este elemento */
+        }
+
+        .absolute-child {
+            position: absolute;
+            top: 50px;
+            /* A partir do topo do elemento pai */
+            left: 20px;
+            /* A partir da esquerda do elemento pai */
+        }
+
+        .fixed-example {
+            position: fixed;
+            top: 0;
+            /* Fixado no topo da janela de visualização */
+            left: 0;
+            /* Fixado no lado direito da janela de visualização */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="static-example">
+        <p>Este parágrafo está com posição estática.</p>
+    </div>
+
+    <div class="relative-example">
+        <p>Este parágrafo está com posição relativa.</p>
+    </div>
+
+    <div class="absolute-parent">
+        <div class="absolute-child">
+            <p>Este parágrafo está com posição absoluta.</p>
+        </div>
+    </div>
+
+    <div class="fixed-example">
+        <p>Este parágrafo está com posição fixa.</p>
+    </div>
+</body>
+
+</html>
