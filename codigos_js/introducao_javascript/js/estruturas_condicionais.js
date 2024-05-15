@@ -30,6 +30,17 @@ if (hora < 12) {
 //     console.log('Saudável')
 // }
 
+// If aninhado
+// if (temperaturaAlta) {
+//     console.log('Febre alta')
+// } else {
+//     if (temperaturaMedia) {
+//         console.log('Febre moderada')
+//     } else {
+//         console.log('Saudável')
+//     }
+// }
+
 // Podemos melhorar o código criando variáveis com relevância, que indiquem o que significa
 let temperaturaAlta = temperatura >= 37.5
 let temperaturaMedia = temperatura < 37.5 && temperatura >= 37
