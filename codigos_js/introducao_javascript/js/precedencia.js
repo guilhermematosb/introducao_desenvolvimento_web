@@ -1,7 +1,14 @@
 // Parênteses (): 
 // Eles têm a precedência mais alta e são usados para 
 // forçar a ordem de avaliação em expressões.
-// resultado = 2 + 3 * 4
+
+//com essa precedência, nosso resultado é 17.
+// let total1 = 2 + 3 * 5
+// console.log(total1)
+
+// o cálculo mudou a precedência, fazendo nosso resultado tornar-se 25.
+// let total2 = (2 + 3) * 5
+// console.log(total2)
 
 // Exponenciação **: 
 // Este operador calcula uma base elevada a uma potência.
