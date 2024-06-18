@@ -1,0 +1,11 @@
+CREATE DATABASE projeto_crud;
+
+USE projeto_crud;
+
+CREATE TABLE usuarios (
+    id INT(11) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(100) NOT NULL,
+    email VARCHAR(100) NOT NULL,
+    senha VARCHAR(255) NOT NULL,
+    data_criacao TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
