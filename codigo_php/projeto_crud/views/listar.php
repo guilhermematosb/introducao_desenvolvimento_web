@@ -27,7 +27,16 @@
         <div class="card">
             <h2>Lista de Usuários</h2>
             <?php
-            
+            $resultado = listarUsuarios($conexao);
+            if ($resultado->num_rows > 0) {
+                while ($linha = $resultado->fetch_assoc()) {
+                    echo "Nome: " . $linha["nome"] . " - Email: " . $linha["email"];
+                    echo " <a href='editar.php?id=" . $linha["id"] . "'>Editar</a>";
+                    echo " <a href='excluir.php?id=" . $linha["id"] . "'>Excluir</a><br>";
+                }
+            } else {
+                echo "0 resultados";
+            }
             ?>
         </div>
     </div>

@@ -43,6 +43,17 @@
 </html>
 
 <?php
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $nome = $_POST['nome'];
+    $email = $_POST['email'];
 
+    $sql = "UPDATE usuarios SET nome='$nome', email='$email' WHERE id=$id";
+
+    if ($conexao->query($sql) === TRUE) {
+        echo "Registro atualizado com sucesso!";
+    } else {
+        echo "Erro: " . $sql . "<br>" . $conexao->error;
+    }
+}
 ?>
 
