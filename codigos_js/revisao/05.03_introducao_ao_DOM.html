@@ -1,0 +1,20 @@
+<!-- Crie um botão que altera a cor de fundo da página quando clicado. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Exercise</title>
+</head>
+<body>
+    <button id="mudarCor">Mudar Cor de Fundo</button>
+
+    <script>
+        document.getElementById("mudarCor").addEventListener("click", function() {
+            document.body.style.backgroundColor = 
+                document.body.style.backgroundColor === 'blue' ? 'white' : 'blue';
+        });
+    </script>
+</body>
+</html>

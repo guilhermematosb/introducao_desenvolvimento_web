@@ -1,0 +1,27 @@
+<!-- Crie uma lista de tarefas onde o usuário pode adicionar e remover tarefas. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Exercise</title>
+</head>
+<body>
+    <input type="text" id="tarefaInput">
+    <button id="adicionarTarefa">Adicionar Tarefa</button>
+    <ul id="listaTarefas"></ul>
+
+    <script>
+        document.getElementById("adicionarTarefa").addEventListener("click", function() {
+            let tarefa = document.getElementById("tarefaInput").value;
+            let li = document.createElement("li");
+            li.textContent = tarefa;
+            li.addEventListener("click", function() {
+                this.remove();
+            });
+            document.getElementById("listaTarefas").appendChild(li);
+        });
+    </script>
+</body>
+</html>
